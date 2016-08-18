@@ -10,7 +10,49 @@
     tools:context="com.niniliwei.myappportfolio.MainActivity">
 
     <TextView
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:layout_marginTop="23dp"
+        android:text="My Nanodegree Apps!"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/button_popular_movies"
+        style="@style/button_sytle"
+        android:layout_below="@+id/textView"
+        android:text="Popular Movies" />
+
+    <Button
+        android:id="@+id/button_stock_hawk"
+        style="@style/button_sytle"
+        android:layout_below="@+id/button_popular_movies"
+        android:text="Stock Hawk" />
+
+    <Button
+        android:id="@+id/button_build_it_bigger"
+        style="@style/button_sytle"
+        android:layout_below="@+id/button_stock_hawk"
+        android:text="Build It Bigger" />
+
+    <Button
+        android:id="@+id/button_make_your_app_material"
+        style="@style/button_sytle"
+        android:layout_below="@+id/button_build_it_bigger"
+        android:text="Make Your App Material" />
+
+    <Button
+        android:id="@+id/button_go_ubiquitous"
+        style="@style/button_sytle"
+        android:layout_below="@+id/button_make_your_app_material"
+        android:text="Go Ubiquitous" />
+
+    <Button
+        android:id="@+id/button_capstone"
+        style="@style/button_sytle"
+        android:layout_below="@+id/button_go_ubiquitous"
+        android:text="Capstone" />
 </RelativeLayout>
