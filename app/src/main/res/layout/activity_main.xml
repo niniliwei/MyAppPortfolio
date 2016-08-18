@@ -13,46 +13,52 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
         android:layout_marginTop="23dp"
         android:text="My Nanodegree Apps!"
         android:textColor="@android:color/black"
-        android:textSize="18sp"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
+        android:textSize="18sp" />
 
     <Button
         android:id="@+id/button_popular_movies"
         style="@style/button_sytle"
         android:layout_below="@+id/textView"
+        android:onClick="showToastPopularMovie"
         android:text="Popular Movies" />
 
     <Button
         android:id="@+id/button_stock_hawk"
         style="@style/button_sytle"
         android:layout_below="@+id/button_popular_movies"
+        android:onClick="showToastStockHawk"
         android:text="Stock Hawk" />
 
     <Button
         android:id="@+id/button_build_it_bigger"
         style="@style/button_sytle"
         android:layout_below="@+id/button_stock_hawk"
+        android:onClick="showToastBuildItBigger"
         android:text="Build It Bigger" />
 
     <Button
         android:id="@+id/button_make_your_app_material"
         style="@style/button_sytle"
         android:layout_below="@+id/button_build_it_bigger"
+        android:onClick="showToastMakeYourAppMaterial"
         android:text="Make Your App Material" />
 
     <Button
         android:id="@+id/button_go_ubiquitous"
         style="@style/button_sytle"
         android:layout_below="@+id/button_make_your_app_material"
+        android:onClick="showToastGoUbiquitous"
         android:text="Go Ubiquitous" />
 
     <Button
         android:id="@+id/button_capstone"
         style="@style/button_sytle"
         android:layout_below="@+id/button_go_ubiquitous"
+        android:onClick="showToastCapstone"
         android:text="Capstone" />
 </RelativeLayout>
