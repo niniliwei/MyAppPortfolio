@@ -15,53 +15,14 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     * button Popular Movies onClick listener
+     * onClick listener of all the buttons
      */
-    public void showToastPopularMovie(View view) {
-        showToast((Button) view);
-    }
-
-    /**
-     * button Stock Hawk onClick listener
-     */
-    public void showToastStockHawk(View view) {
-        showToast((Button) view);
-    }
-
-    /**
-     * button Build It Bigger onClick listener
-     */
-    public void showToastBuildItBigger(View view) {
-        showToast((Button) view);
-    }
-
-    /**
-     * button Make Your App Material onClick listener
-     */
-    public void showToastMakeYourAppMaterial(View view) {
-        showToast((Button) view);
-    }
-
-    /**
-     * button Go Ubiquitous onClick listener
-     */
-    public void showToastGoUbiquitous(View view) {
-        showToast((Button) view);
-    }
-
-    /**
-     * button Capstone onClick listener
-     */
-    public void showToastCapstone(View view) {
-        showToast((Button) view);
-    }
-
-    /**
-     * extracted universal showToast method
-     */
-    private void showToast(Button button) {
-        String buttonName = button.getText().toString();
-        String text = String.format("This button will launch my %s app!", buttonName);
-        Toast.makeText(this, text, Toast.LENGTH_SHORT).show();
+    public void showToast(View view) {
+        Button button = (Button) view;
+        // If we tap the "popular movies" button, then we will get "Popular Movies".
+        // The same goes for all the other buttons.
+        String appName = button.getText().toString();
+        // display the Toast message
+        Toast.makeText(this, appName, Toast.LENGTH_SHORT).show();
     }
 }
